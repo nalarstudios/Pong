@@ -124,6 +124,7 @@ GameObject:
   - component: {fileID: 111513796}
   - component: {fileID: 111513795}
   - component: {fileID: 111513794}
+  - component: {fileID: 111513797}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -224,6 +225,17 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 111513792}
+--- !u!114 &111513797
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 111513792}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f59de2e47114888498eb2b6ff2605fd2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &530136762
 GameObject:
   m_ObjectHideFlags: 0
@@ -311,7 +323,7 @@ RectTransform:
   m_Children:
   - {fileID: 111513793}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -378,48 +390,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &930953520
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 930953522}
-  - component: {fileID: 930953521}
-  m_Layer: 0
-  m_Name: Pause Button
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &930953521
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 930953520}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f59de2e47114888498eb2b6ff2605fd2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isPaused: 0
---- !u!4 &930953522
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 930953520}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &995330853
 GameObject:
@@ -523,7 +494,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 2
 --- !u!4 &995330859
 Transform:
   m_ObjectHideFlags: 0
@@ -538,23 +509,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1058430960 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1517290650252550, guid: 656b7051f590adf49b418fb662518ac5,
-    type: 2}
-  m_PrefabInternal: {fileID: 1803875682}
---- !u!114 &1058430961
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1058430960}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3f0fcfb1a6589d0409a57c53f6a999df, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 0.1
 --- !u!1 &1202379277
 GameObject:
   m_ObjectHideFlags: 0
@@ -753,21 +707,6 @@ Prefab:
       propertyPath: m_Name
       value: Wall (top)
       objectReference: {fileID: 0}
-    - target: {fileID: 65411190394980792, guid: 68ed109d300bcae40ac24ca7cd4862c5,
-        type: 2}
-      propertyPath: m_IsTrigger
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 54757418694675554, guid: 68ed109d300bcae40ac24ca7cd4862c5,
-        type: 2}
-      propertyPath: m_IsKinematic
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 65411190394980792, guid: 68ed109d300bcae40ac24ca7cd4862c5,
-        type: 2}
-      propertyPath: m_Material
-      value: 
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 68ed109d300bcae40ac24ca7cd4862c5, type: 2}
   m_IsPrefabParent: 0
@@ -879,16 +818,6 @@ Prefab:
       propertyPath: m_Name
       value: Wall (bottom)
       objectReference: {fileID: 0}
-    - target: {fileID: 54757418694675554, guid: 68ed109d300bcae40ac24ca7cd4862c5,
-        type: 2}
-      propertyPath: m_IsKinematic
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 65411190394980792, guid: 68ed109d300bcae40ac24ca7cd4862c5,
-        type: 2}
-      propertyPath: m_IsTrigger
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 68ed109d300bcae40ac24ca7cd4862c5, type: 2}
   m_IsPrefabParent: 0
@@ -934,6 +863,21 @@ Prefab:
     - target: {fileID: 1517290650252550, guid: 656b7051f590adf49b418fb662518ac5, type: 2}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 54135708004636320, guid: 656b7051f590adf49b418fb662518ac5,
+        type: 2}
+      propertyPath: m_CollisionDetection
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 54135708004636320, guid: 656b7051f590adf49b418fb662518ac5,
+        type: 2}
+      propertyPath: m_Interpolate
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 54135708004636320, guid: 656b7051f590adf49b418fb662518ac5,
+        type: 2}
+      propertyPath: m_IsKinematic
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 656b7051f590adf49b418fb662518ac5, type: 2}
