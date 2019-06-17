@@ -1,14 +1,30 @@
 ﻿using UnityEngine;
 
 public class Pauser : MonoBehaviour {
-
-	// Use this for initialization
-	void Start ()
+public bool isPaused = false;
+    // Use this for initialization
+    void Start ()
     {
         
 	}
-    public void Pause()
+    void Update()
     {
-        Time.timeScale = 0;
+        if (Input.GetKeyDown("p"))
+        {
+            Toggle();
+        }
+    }
+    public void Toggle()
+    {
+        if (isPaused)
+        {
+            Time.timeScale = 1;
+            isPaused = false;
+        }
+        else
+        {
+            Time.timeScale = 0;
+            isPaused = true;
+        }
     }
 }

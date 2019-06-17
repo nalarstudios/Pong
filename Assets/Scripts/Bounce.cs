@@ -14,10 +14,6 @@ public class Bounce : MonoBehaviour {
         velocity = new Vector3(5.0f, 0, 5.9f);
         rb.velocity = velocity;
     }
-    void OnCollisionEnter(Collision collision)
-    {
-        Debug.Log("We Hit Something");
-    }
     private void Update()
     {
         //transform.Translate(velocity);
