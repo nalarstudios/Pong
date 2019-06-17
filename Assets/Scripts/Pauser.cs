@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 
 public class Pauser : MonoBehaviour {
-public bool isPaused = false;
+private bool isPaused = false;
     // Use this for initialization
     void Start ()
     {
