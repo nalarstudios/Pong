@@ -17,6 +17,7 @@ public class BallTracker : MonoBehaviour {
             int score = int.Parse(text.text);
             score++;
             text.text = score.ToString();
+            ball.transform.position = Vector3.zero;
         }
 	}
 }
