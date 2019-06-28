@@ -4,9 +4,11 @@ using UnityEngine.UI;
 public class BallTracker : MonoBehaviour {
     public GameObject ball;
     public GameObject playerScore;
+    public AudioSource winSound;
 	// Use this for initialization
 	void Start () {
         playerScore.GetComponent<Text>().text = "0";
+        winSound = GetComponent<AudioSource>();
 	}
 	
 	// Update is called once per frame
@@ -18,6 +20,7 @@ public class BallTracker : MonoBehaviour {
             score++;
             text.text = score.ToString();
             ball.transform.position = Vector3.zero;
+            winSound.Play();
         }
 	}
 }
