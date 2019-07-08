@@ -694,6 +694,8 @@ GameObject:
   - component: {fileID: 995330856}
   - component: {fileID: 995330855}
   - component: {fileID: 995330854}
+  - component: {fileID: 995330861}
+  - component: {fileID: 995330860}
   m_Layer: 0
   m_Name: Ball
   m_TagString: Untagged
@@ -797,6 +799,98 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &995330860
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 995330853}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7cf35652c751c6d40ac03eee0bf7b5ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tickSource: {fileID: 0}
+--- !u!82 &995330861
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 995330853}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 45792e8e988e3a94f81818a102d4708a, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
 --- !u!1 &1154808191
 GameObject:
   m_ObjectHideFlags: 0
@@ -1070,6 +1164,15 @@ Prefab:
       propertyPath: m_Name
       value: Wall (top)
       objectReference: {fileID: 0}
+    - target: {fileID: 65411190394980792, guid: 68ed109d300bcae40ac24ca7cd4862c5,
+        type: 2}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1114635747793666, guid: 68ed109d300bcae40ac24ca7cd4862c5, type: 2}
+      propertyPath: m_TagString
+      value: Collidable
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 68ed109d300bcae40ac24ca7cd4862c5, type: 2}
   m_IsPrefabParent: 0
@@ -1181,6 +1284,10 @@ Prefab:
       propertyPath: m_Name
       value: Wall (bottom)
       objectReference: {fileID: 0}
+    - target: {fileID: 1114635747793666, guid: 68ed109d300bcae40ac24ca7cd4862c5, type: 2}
+      propertyPath: m_TagString
+      value: Collidable
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 68ed109d300bcae40ac24ca7cd4862c5, type: 2}
   m_IsPrefabParent: 0
@@ -1241,6 +1348,10 @@ Prefab:
         type: 2}
       propertyPath: m_IsKinematic
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1517290650252550, guid: 656b7051f590adf49b418fb662518ac5, type: 2}
+      propertyPath: m_TagString
+      value: Collidable
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 656b7051f590adf49b418fb662518ac5, type: 2}
@@ -1362,6 +1473,10 @@ Prefab:
     - target: {fileID: 1517290650252550, guid: 656b7051f590adf49b418fb662518ac5, type: 2}
       propertyPath: m_Name
       value: Enemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 1517290650252550, guid: 656b7051f590adf49b418fb662518ac5, type: 2}
+      propertyPath: m_TagString
+      value: Collidable
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 656b7051f590adf49b418fb662518ac5, type: 2}
