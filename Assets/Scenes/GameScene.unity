@@ -1353,9 +1353,32 @@ Prefab:
       propertyPath: m_TagString
       value: Collidable
       objectReference: {fileID: 0}
+    - target: {fileID: 4341500679486046, guid: 656b7051f590adf49b418fb662518ac5, type: 2}
+      propertyPath: m_LocalScale.z
+      value: 4
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 656b7051f590adf49b418fb662518ac5, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &1813403755 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1517290650252550, guid: 656b7051f590adf49b418fb662518ac5,
+    type: 2}
+  m_PrefabInternal: {fileID: 2025279894}
+--- !u!114 &1813403761
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1813403755}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17ba660d180a80a479b2ea6c2c1f777b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ball: {fileID: 995330853}
+  minSpeed: 2.5
+  maxSpeed: 4
 --- !u!1 &1973340844
 GameObject:
   m_ObjectHideFlags: 0
@@ -1478,6 +1501,16 @@ Prefab:
       propertyPath: m_TagString
       value: Collidable
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 54135708004636320, guid: 656b7051f590adf49b418fb662518ac5,
+        type: 2}
+      propertyPath: m_Constraints
+      value: 118
+      objectReference: {fileID: 0}
+    - target: {fileID: 4341500679486046, guid: 656b7051f590adf49b418fb662518ac5, type: 2}
+      propertyPath: m_LocalScale.z
+      value: 4
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 114028307860749178, guid: 656b7051f590adf49b418fb662518ac5, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 656b7051f590adf49b418fb662518ac5, type: 2}
   m_IsPrefabParent: 0
